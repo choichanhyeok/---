@@ -22,9 +22,11 @@
 
 <br>
 
-![image](https://github.com/choichanhyeok/Study-Clean-Code/assets/68278903/6ddcc367-7f77-4171-8f7f-7349b0c97520)
+![image](https://github.com/choichanhyeok/---/assets/68278903/eb0f5987-b400-4fe1-a793-d137bb824692)
 
-![image](https://github.com/choichanhyeok/Study-Clean-Code/assets/68278903/775f030d-15da-47eb-a1d8-66fe3950fcad)
+
+![image](https://github.com/choichanhyeok/---/assets/68278903/911e6b07-f19d-410b-9e9f-ce885d97415c)
+
 
 > 저자는 "좋은 코드(깨끗한 방)를 쓸래, 나쁜 코드(더러운 방)를 쓸래?"라는 질문과 함께 클린코드에 대한 설명을 시작한다. 이 때 좋은 코드를 쓰기 위한 조건으로 "장인정신"이 필요하다고 주장하는데, 사실 좀 뜬금없어서 무슨 맥락인지 이해는 못했다. 어쨌든 좋은 코드(깨끗한 방)을 쓰기 위해선 장인 정신이 필요한데 이 장인 정신은 이론적인 부분만 이해하는게 아니라 반복 숙달을 통해 우리가 자전거를 타듯이 자연스러운 체화를 시켜야 한다고 말하며 우리가 책을 읽으면서 이를 염두하길 당부했다.
 
@@ -34,7 +36,8 @@
 
 ## 2. 연사님들의 아주 좋은 말씀 있겠읍니다 .... (1) 나쁜 코드
 
-![image](https://github.com/choichanhyeok/Study-Clean-Code/assets/68278903/5e9ab8e1-7329-4988-8cad-9fb98a57fe27)
+![image](https://github.com/choichanhyeok/---/assets/68278903/ac14fc1a-488b-41a7-b665-0e982c006760)
+
 
 > 저자는 여러 명사들의 말을 인용해 좋은 코드를 써야 함을 강조했는데 그 중 켄트백은 좋은 코드를 써야 한다는 주장의 근거로 "나쁜 코드를 써서" 회사가 망했다는 다소 공감하기 어려운 추상적인 사례를 제시한다. 그러면서 사뭇 엄격한 어투로
 
@@ -48,7 +51,8 @@
 
 <br>
 
-![image](https://github.com/choichanhyeok/Study-Clean-Code/assets/68278903/f7fb978b-589c-4ae9-bd8b-2186674ce0ae)
+![image](https://github.com/choichanhyeok/---/assets/68278903/127d2b86-2055-46de-8b5b-530aa86f06ef)
+
 
 > 또 캔트백은 나쁜 코드를 방치했을 때 생산성에 어떤 영향을 미치는지에 대한 그래프를 제시했는데, 사실 이거는 요즘 뼈저리게 느끼고 있는 부분이기도 하다. 종종 클래스를 열어보면 "와 .. 씨"라는 생각이 드는 코드들을 자주 보는데 이런 코드들이 만들어내는 난독성 때문에 개발 속도에 큰 영향을 미치고 있기 때문이다. 어쨌든 저자는 캔드백의 말을 인용해 ​"나쁜 코드 방치했을 때 생산성 떨어지니까 회사에서 살아 남으려면 깨끗한 코드 써라"라는 말을 하고 싶은 것 같다.
 
@@ -58,10 +62,12 @@
 
 ## 3. 연사님들의 아주 좋은 말씀 있겠읍니다 .... (2) 비야네의 깨끗한 코드
 
-![image](https://github.com/choichanhyeok/Study-Clean-Code/assets/68278903/7c4bfeb0-2e72-4dfa-9e36-0f2fa8b591b1)
+![image](https://github.com/choichanhyeok/---/assets/68278903/ed57362f-13c4-46a2-8e9e-6ee4a03f12f1)
+
 
 > 비야네 선생님은 "항상 프로젝트가 깨끗한 코드로 이루어진 상태를 유지하라"라는 말을 하고 싶었던 거 같다. 이 제안에 대한 근거로 "깨진 창문"효과를 제시했는데 -대부분의 건물의 창이 깨진 도시에선 아무도 창문이 깨진 걸 신경쓰지 않는다- 라는 사회 실험이었던 걸로 기억한다. 마찬가지로 드러운 코드로 점철되어 있는 프로젝트라면, 아무도 드러운 코드를 쓰는 것에 대해 죄책감을 느끼지 않을 것이라는 주장으로 이해했다.
-> ![image](https://github.com/choichanhyeok/Study-Clean-Code/assets/68278903/2d8ee1a1-871e-4ad0-a33d-fdc94f55b4f6)
+> ![image](https://github.com/choichanhyeok/---/assets/68278903/616d2215-79d3-4233-8732-c30f1b8fa297)
+
 
 > 저자는 이렇게 비야네 선생님의 말을 통해 깨끗한 코드의 중요성을 강조하려고 하는 것 같다. 저자는 "깨끗한 코드를 작성하면 프로젝트가 성공할 확률이 높아진다. 그리고 깨끗한 코드를 작성하려면 처음부터 깨끗한 코드를 작성하는 습관을 들여야 한다."라는 주장을 하며, 이러한 주장의 근거로 비야네 선생님의 말을 들고 있는 것 같다.
 
