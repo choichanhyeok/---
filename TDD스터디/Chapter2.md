@@ -507,7 +507,7 @@ public class GuessStatisticsMessage {
 
 ---
 
-## 11. 불필요한 맥락을 없애라
+11. ## 불필요한 맥락을 없애라
 
 > 아니 방금까진 맥락 추가하라며?
 
