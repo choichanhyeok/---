@@ -139,7 +139,8 @@ public static String testableHtml(PageData pageData, boolean includeSuiteSetup) 
 
 <br>
 
-[그림1]. 사과 쪼개는 개발자 호동씨
+![image](https://github.com/choichanhyeok/---/assets/68278903/a3936782-6754-4216-bb48-0392c18fe8e0)
+
 
 <br>
 
@@ -273,7 +274,8 @@ circle makeCircle(Point center, double radius);
 > 마! 그럼 가변 파라미터는?
 
 
-[그림2]. 백숙 못먹어 화난 개발자 아저씨
+![image](https://github.com/choichanhyeok/---/assets/68278903/9114074d-ce12-42f8-8966-2a4213f1c5ba)
+
 
 <br>
 
@@ -383,7 +385,8 @@ fun updateProfile(updateUserRequest: UpdateUserRequest): Int{
 
  
 
-[그림 3]. 그 유명한 클린코드와 다익스트라의 숨막히는 자존심 싸움
+![image](https://github.com/choichanhyeok/---/assets/68278903/2c71823e-ffbd-4129-8440-4215de4848cb)
+
 
 ​
 <br><br><br><br>
