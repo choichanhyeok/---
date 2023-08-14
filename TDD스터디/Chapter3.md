@@ -43,7 +43,7 @@
 >
 >이번 기록에서는 클린 코드 3장 ["함수"]에 대해서 정리하려 한다.
 
- <br><br> <br><br>
+ <br><br> <br>
 
 ---
 
@@ -105,8 +105,11 @@ public static String testableHtml(PageData pageData, boolean includeSuiteSetup) 
 
 > 저자는 대뜸 위 코드를 주며 3분 줄테니 이해해 보라고 독자를 무시한다. "우리 회사 코드도 개떡같은거라면 어디가서  꿀리지 않는데 내가 그래도 그 개떡같은 코드들 속에서 신용대출 프로세스에 기능 반영도 하는데 나를 무시하다니, 보험사 레거시 코드로 단련된 내 솜씨를 보여주마" 하고 도전했다가 1분 30초만에 상황 파악하고 개선안을 확인했다.
 
+
+
 <br>
 ​
+
 ```
 public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {
     boolean isTestPage = pageData.hasAttribute("Test");
@@ -122,7 +125,8 @@ public static String testableHtml(PageData pageData, boolean includeSuiteSetup) 
 ```
 
 <br>
-위 처럼 함수들을 짧은 단위로 분리해서 보면 그래도 어느정도 눈에 들어온다. 사실 저자는 저 코드도 FitNewsse에 익숙하지 않으면 이해하기 어려울거라고 말하지만, 그래도 대략적인 내용은 파악할 수 있다. 이 처럼 보다 직관적으로 프로그램의 흐름을 파악할 수 있도록 하기 위해선 뭐가 필요할까?
+
+> 위 처럼 함수들을 짧은 단위로 분리해서 보면 그래도 어느정도 눈에 들어온다. 사실 저자는 저 코드도 FitNewsse에 익숙하지 않으면 이해하기 어려울거라고 말하지만, 그래도 대략적인 내용은 파악할 수 있다. 이 처럼 보다 직관적으로 프로그램의 흐름을 파악할 수 있도록 하기 위해선 뭐가 필요할까?
 
 
 
@@ -138,6 +142,7 @@ public static String testableHtml(PageData pageData, boolean includeSuiteSetup) 
 [그림1]. 사과 쪼개는 개발자 호동씨
 
 <br>
+
 > 저자는 무조건 작게 쪼개라고 한다. 캔트백의 코드를 봤을 때 상상 이상으로 작아 놀랐다는 일화를 얘기하며 기존에 개선된 코드보다 더 줄일것을 제안했는데 먼저 코드는 아래와 같다.
 
 ​
@@ -159,6 +164,8 @@ public static String testableHtml(PageData pageData, boolean isSuite) throws Exc
 
 3. ## 함수의 들여쓰기 수준은 1단이나 2단을 넘어서면 안된다.
 
+
+
 ```
 fun gotoMarry(choichanhyeok: Choichanhyeok): Unit{
    if (choichanhyeok.get재산() > 5억){
@@ -169,7 +176,8 @@ fun gotoMarry(choichanhyeok: Choichanhyeok): Unit{
         }
     }
 }
-``
+```
+
 
 > 위 코드는 내가 결혼을 할 수 있는지에 대해 판별하는 간단한 함수이다.
 > 
@@ -247,10 +255,12 @@ fun gotoMarry(choichanhyeok: Choichanhyeok): Unit{
 
 <br>
 ​
+
 ```
 Circle makeCircle(double x, double y, double radius);
 circle makeCircle(Point center, double radius);
 ```
+
 
 <br><br><br><br>
 
@@ -272,7 +282,9 @@ circle makeCircle(Point center, double radius);
 
 <br><br><br><br>
 
-​---
+
+
+---
 
 9. ## 부수 효과는 거짓말을 하는것과 마찬가지다
 
@@ -320,7 +332,8 @@ report.appendFooter()
 
 ​
 
-​```
+
+```
 fun updateProfile(updateUserRequest: UpdateUserRequest): Int{
     .
     .
@@ -328,6 +341,8 @@ fun updateProfile(updateUserRequest: UpdateUserRequest): Int{
     return updatedUserId
 }
 ```
+
+
 
 > 위 코드처럼 유저 정보 업데이트를 했을 때 정책에 의해서 유저 ID를 응답해줘야 한다던지, 특정 정책의 updateUserResponse 객체를 내려줘야 하는 경우가 있을 수 있는데 이 경우에는 수정과 조회 작업을 어쩔 수 없이 병행해야 할 것 같다.
 
@@ -345,8 +360,9 @@ fun updateProfile(updateUserRequest: UpdateUserRequest): Int{
 
 ​<br>
 
+
 ﻿> "하위 루틴을 발명한 이래로 소프트웨어 갭라에서 지금까지 일어난 혁신은 소스 코드에서 중복을 제거하려는 지속적인 노력으로 보인다."
-> (어쩌고 C. 마틴)
+> > (어쩌고 C. 마틴)
 ​
 <br><br><br><br>
 
