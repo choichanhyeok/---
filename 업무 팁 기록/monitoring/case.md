@@ -17,3 +17,12 @@
 > (2) `df -h /LOG/`로 로그크기 분석
 > 
 > (3) `du -ah /LOG/Was | sort -rh`이용해서 큰 용량을 먹는 디렉토리 검색
+
+
+#### 3. SLF4J 로그 레벨별 크기 검토
+
+> (1) AWK 이용 방법: 
+ ``` awk '/ERROR/ { total += length($0) + 1 } END { print total }' your_log_file.log ```
+ 
+> (2) grep 이용 방법: 
+ ``` grep "ERROR" your_log_file.log > temp_error.log du -sh temp_error.log rm temp_error.log```
