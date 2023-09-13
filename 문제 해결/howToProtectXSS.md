@@ -38,3 +38,27 @@ Reflected XSS와 다르게 지속성이 있어 위험성이나 영향도가 비�
 <br><br>
 
 애석하게도 위 3 방법을 다혼용해서 써야 할 거 같다.
+
+
+### 3. 일반적으로 사용하는 lucy-xss-servlet-filter 분석과 적용 가능 여부 검토
+
+<br>
+
+서비스 요구사항은 아래 기재한 2가지 경우로 XSS 공격에 노출된다고 가정한다.
+<br>
+(1) 검색 기능은 url의 query param을 이용해 사용자의 입력값을 전달한다. reflected xss 노출 => reflected
+(2) 꼭 검색 기능이 아니더라도 url의 query param으로 넘겨주는 경우가 있음. 단, 해당 부분들이 실제로 사용자에게 랜더링돼 reflected xss에 노출되는지 여부는 검토 안함 => reflected, stored xss
+(3) ajax call을 래핑한 별도 클래스를 통해 post에 body값으로 다양한 값을 넘겨주거나 get으로 queryParam 넘겨줄 수 있음 (rest) => reflected, stored xss
+(4) form 형식을 래핑한 movePage를 사용하는 과정에서 reflected, stored xss 둘다 노출 가능성 있음: 해당 form에서 Post, GET 둘 다 지원하기 때문에 => reflected, stored xss
+
+<br><br>
+
+결론은 다양한 xss 공격 가능 경로가 존재하기 때문에 이에 대해 입력 값 제한이나 치환을 해줘야 하는데 입력 값 제한은 굉장히 큰 공수가 들고 유지보수 비용을 감당할 수 없다. (클라이언트 레벨에서의 개별적 치환은 불가능)
+그래서 서버에서 필터를 이용해 해결하려 했는데 일반적으로 사용하는 XSS-filter를 적용할 수 없는 상황이다. 이유는 아래와 같다.
+
+<br><br>
+
++ lucy xss servlet filter는 @requestBody를 필터링 하지 못한다.
+
+
+
